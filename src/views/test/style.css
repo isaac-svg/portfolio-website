@@ -1,0 +1,139 @@
+
+
+
+:root {
+  --primary: #6a59ff;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+
+.main-swiper_container {
+  max-width: 78.125rem; /* (124 * 0.625) */
+  padding: 2.5rem 0.625rem; /* (4 * 0.625) (1 * 0.625) */
+  margin: 0 auto;
+}
+
+
+.swiper_container {
+  height: 35.5rem; /* (52 * 0.625) */
+  padding: 1.25rem 0; /* (2 * 0.625) */
+  position: relative;
+}
+
+.swiper-slide {
+  width: 20.125rem; /* (37 * 0.625) */
+  height: fit-content !important; /* (42 * 0.625) */
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .swiper_container {
+    height: fit-content !important; /* (47 * 0.625) */
+  }
+  .swiper-slide {
+    width: 17.5rem !important; /* (28 * 0.625) */
+    height: fit-content !important; 
+  }
+  .swiper-slide img {
+    width: 17.5rem !important; /* (28 * 0.625) */
+    height: 22.5rem !important; /* (36 * 0.625) */
+  }
+}
+
+.swiper-slide img {
+  width: 23.125rem; /* (37 * 0.625) */
+  height: 26.25rem; /* (42 * 0.625) */
+  /* border-radius: 1.25rem;  */
+  object-fit: cover;
+}
+
+
+
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 2px solid #6a59ff; */
+  /* marrow_forward
+argin-top: 1rem; */
+}
+
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    left: 90% !important;
+    transform: translateX(-90%) !important;
+  }
+  .slider-controler .swiper-button-prev {
+    left: 10% !important;
+    transform: translateX(-10%) !important;
+  }
+  .slider-controler{
+    bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-next {
+    left: 100% !important;
+    transform: translateX(-100%) !important;
+    /* border: 2px solid orange; */
+  }
+  .slider-controler{
+    bottom: 0;
+  }
+  .slider-controler .swiper-button-prev {
+    left: 0% !important;
+    transform: translateX(-0%) !important;
+  }
+}
+
+
+
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+
+
+.slider-controler .slider-arrow::after {
+  content: '';
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 100% !important;
+  bottom: 1rem;
+  /* border: 2px solid red; */
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  /* width: 0.rem; */
+  background: white !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}

@@ -36,14 +36,14 @@ const CaroulSlider = () => {
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="swiper_container"
-          autoplay={
-            {
-              delay:2000,
-              disableOnInteraction:true,
-              pauseOnMouseEnter:true,
+          // autoplay={
+          //   {
+          //     delay:2000,
+          //     disableOnInteraction:true,
+          //     pauseOnMouseEnter:true,
               
-            }
-          }
+          //   }
+          // }
           
     >
  
